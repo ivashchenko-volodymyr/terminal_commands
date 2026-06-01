@@ -12,3 +12,6 @@ git fetch -p && git branch -vv | grep ': gone]' | awk '{print $1}' | xargs git b
 
 
 git checkout main && git pull && git fetch origin --prune && git lgbr -15
+
+# update & upgrade Ubuntu packages
+sudo apt update && sudo apt -y upgrade && sudo apt -y autoremove
